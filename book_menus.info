@@ -3,6 +3,8 @@ description = Allows a user to manage book navigation via the normal Backdrop ad
 backdrop = 1.x
 type = module
 
+maintainers[yorkshire-pudding] = Martin Price
+
 dependencies[] = menu
 dependencies[] = book
 
