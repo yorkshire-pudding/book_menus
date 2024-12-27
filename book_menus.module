@@ -281,9 +281,8 @@ function book_menus_preprocess_book_navigation_before(&$variables) {
 
     // Make sure the parent was a valid book page.
     if (!array_key_exists($book_link['plid'], $flat[$book_link['mlid']])) {
-
-      // Setting to TRUE tricks book.module not to display the "up" link.
-      $variables['book_link']['plid'] = TRUE;
+      // Do not display the "up" link.
+      $variables['book_link']['plid'] = 0;
     }
   }
 }
